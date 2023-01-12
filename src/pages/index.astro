@@ -13,9 +13,9 @@ const pageTitle = "Home";
 	<main>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
 
-		<a href='${import.meta.env.BASE_URL}/'>Home</a>
-		<a href='${import.meta.env.BASE_URL}/about/'>About</a>
-		<a href='${import.meta.env.BASE_URL}/blog/'>Blog</a>
+        <a href={import.meta.env.BASE_URL}>Home</a>
+        <a href=`${import.meta.env.BASE_URL}about/`>About</a>
+		<a href=`${import.meta.env.BASE_URL}blog/`>Blog</a>
 		
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />

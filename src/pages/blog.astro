@@ -8,14 +8,16 @@ const pageTitle = "Blog";
     <title>{pageTitle}</title>
   </head>
   <body>
-    <a href='${import.meta.env.BASE_URL}/'>Home</a>
-    <a href='${import.meta.env.BASE_URL}/about/'>About</a>
-    <a href='${import.meta.env.BASE_URL}/blog/'>{pageTitle}</a>
+    <a href={import.meta.env.BASE_URL}>Home</a>
+    <a href=`${import.meta.env.BASE_URL}about/`>About</a>
+    <a href=`${import.meta.env.BASE_URL}blog/`>Blog</a>
 
     <h1>My Astro Learning Blog</h1>
     <p>This is where I will post about my journey learning Astro.</p>
     <ul>
-      <li><a href='${import.meta.env.BASE_URL}/posts/post-1/'>Post 1</a></li>
+      <li>
+        <a href=`${import.meta.env.BASE_URL}posts/post-1`>Post 1</a>
+      </li>
     </ul>
   </body>
 </html>
